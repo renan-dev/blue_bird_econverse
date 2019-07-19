@@ -1,0 +1,39 @@
+.showcase {
+    grid-row: 2;
+    @include centraliza-conteudo;
+    justify-content: center;
+    flex-direction: column;
+    h1,
+    p {
+        margin-bottom: 20px;
+    }
+    h1 {
+        font-weight: bold;
+        color: #222;
+        text-transform: uppercase;
+    }
+    p {
+        color: $cor-cinza-claro;
+        font-size: 1em;
+        margin-bottom: 6vh;
+    }
+}
+
+.product-line {
+    width: 97%;
+    @include centraliza-conteudo;
+    justify-content: space-between;
+    padding: 20px;
+    img {
+        cursor: pointer;
+    }
+}
+
+.product {
+    width: 120px;
+    height: 120px;
+    padding: 60px;
+    @include centraliza-conteudo;
+    justify-content: center;
+    flex-direction: row;
+}

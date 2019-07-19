@@ -1,0 +1,100 @@
+.menu-nav {
+    width: 100%;
+    height: 10vh;
+    @include centraliza-conteudo;
+    justify-content: flex-end;
+    list-style: none;
+    border-bottom: 1px solid $cor-borda-cinza;
+    margin-bottom: 15px;
+    li {
+        padding: 20px;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: .8em;
+            color: $cor-destaque-cinza;
+            @include centraliza-conteudo;
+            justify-content: space-around;
+            margin-bottom: 1px solid $cor-destaque-cinza;
+            letter-spacing: .1em;
+            font-weight: bold;
+        }
+    }
+    li:hover .submenu {
+        visibility: visible;
+        opacity: 1;
+    }
+    .submenu {
+        position: absolute;
+        top: 105px;
+        left: 0;
+        padding: 50px 5px 0 5px;
+        width: 98vw;
+        height: 50vh;
+        background-color: #fff;
+        display: flex;
+        align-items: left;
+        justify-content: space-between;
+        visibility: hidden;
+        opacity: 0;
+        p:hover {
+            color: $cor-padrao-verde;
+        }
+    }
+}
+
+.list-submenu-left {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    cursor: pointer;
+    .left-submenu {
+        margin-bottom: 15px;
+        font-size: .8em;
+        color: $cor-destaque-cinza;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .title-submenu:nth-child(1) {
+        margin-bottom: 15px;
+        font-size: .8em;
+        color: $cor-destaque-cinza;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: unset;
+    }
+}
+
+.list-submenu p {
+    margin-bottom: 15px;
+    font-size: .8em;
+    color: rgb(104, 104, 104);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.list-submenu .view-all {
+    color: $cor-destaque-cinza;
+    font-weight: bold;
+}
+
+.banner {
+    width: 100%;
+}
+
+.search {
+    margin-left: 120px;
+    input {
+        border: none;
+        border-bottom: 1px solid $cor-borda-cinza;
+        &::placeholder {
+            background-image: url("../img/icons/search.png");
+            background-size: 10px;
+            background-position-x: 145px;
+            background-repeat: no-repeat;
+            text-transform: uppercase;
+            font-size: .7em;
+            color: $cor-cinza-claro;
+        }
+    }
+}

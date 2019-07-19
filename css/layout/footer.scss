@@ -1,0 +1,101 @@
+footer {
+    grid-column: 1 / 13;
+    grid-row: 9;
+    margin: 110px 0 80px 0;
+    h4 {
+        margin-bottom: 10px;
+        font-size: .8em;
+        text-transform: uppercase;
+        color: $cor-destaque-cinza;
+    }
+}
+
+.contatos {
+    height: auto;
+    padding: 30px;
+    border-top: 1px solid #e1e1e1;
+    @include borda-fina;
+    @include centraliza-conteudo;
+    justify-content: space-around;
+    flex-direction: row;
+    line-height: 30px;
+}
+
+.atendimento,
+.informacoes,
+.contato,
+.newletter {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.atendimento a,
+.informacoes a,
+.contato span,
+.newletter p {
+    text-decoration: none;
+    font-size: .8em;
+    color: $cor-cinza-claro;
+}
+
+.redes-sociais {
+    padding: 25px 0 0 0;
+}
+
+.newletter {
+    width: 250px;
+    h4,
+    p {
+        margin: 0px;
+        padding: 0px;
+        line-height: 20px;
+        text-align: left;
+    }
+    input[type="text"] {
+        padding: 8px;
+        border: none;
+        background-color: #f0efef;
+        margin-bottom: 5px;
+    }
+    input[type="email"] {
+        padding: 8px;
+        border: none;
+        background-color: #f0efef;
+        margin-bottom: 10px;
+        width: calc(100% - 80px);
+    }
+    input[type="submit"] {
+        background-color: $cor-padrao-azul;
+        color: $cor-texto-branco;
+        letter-spacing: .1em;
+        width: 60px;
+        padding: 8px;
+        border: none;
+        margin-top: -10px;
+        cursor: pointer;
+    }
+    .inputButton {
+        @include centraliza-conteudo;
+        justify-content: space-between;
+    }
+}
+
+.copy {
+    font-size: .7em;
+    color: $cor-destaque-cinza;
+    @include centraliza-conteudo;
+    justify-content: center;
+    padding: 30px;
+}
+
+.promo {
+    background-color: $cor-padrao-azul;
+    color: $cor-texto-branco;
+    @include centraliza-conteudo;
+    font-size: .8em;
+    height: 40px;
+    justify-content: space-around;
+    margin-top: 20px;
+}

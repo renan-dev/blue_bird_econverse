@@ -1,0 +1,41 @@
+header {
+    grid-column: 1 / 13;
+    grid-row: 1;
+}
+
+.header-top {
+    height: 6vh;
+    @include centraliza-conteudo;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+}
+
+.location {
+    @include centraliza-conteudo;
+}
+
+.header-top {
+    .location::before {
+        content: url("../img/icons/location.png");
+        margin-right: 5px;
+    }
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: .6rem;
+        color: $cor-cinza-claro;
+    }
+}
+
+.user-area {
+    width: 20%;
+    @include centraliza-conteudo;
+    justify-content: space-evenly;
+    span {
+        margin: 10px;
+    }
+    a:nth-child(2)::after {
+        content: "|";
+        margin-left: 15px;
+    }
+}

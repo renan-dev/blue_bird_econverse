@@ -1,0 +1,8 @@
+@mixin centraliza-conteudo {
+    display: $tipo-display;
+    align-items: $alinha-centro;
+}
+
+@mixin borda-fina {
+    border-bottom: $borda-subtitulo;
+}

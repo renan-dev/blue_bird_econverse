@@ -1,0 +1,152 @@
+.area-blog p,
+.area-lojas p,
+.area-personalize p,
+.area-lorem p,
+.area-ipsum p {
+    text-align: center;
+}
+
+.infos {
+    padding: 150px;
+    line-height: 20px;
+    text-align: center;
+    color: $cor-destaque-cinza;
+    background-color: #fff;
+    @include centraliza-conteudo;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
+        margin-bottom: 50px;
+        letter-spacing: .2em;
+        font-weight: 100;
+    }
+    p {
+        word-spacing: .1em;
+        line-height: 30px;
+    }
+}
+
+.infos button,
+.area-insta button {
+    border: none;
+    width: 190px;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $cor-texto-branco;
+    margin-top: 20px;
+}
+
+.area-lojas button,
+.area-lorem button {
+    background-color: $cor-padrao-azul;
+    cursor: pointer;
+}
+
+.area-blog button,
+.area-personalize button,
+.area-ipsum button,
+.area-insta button {
+    background-color: $cor-padrao-verde;
+    cursor: pointer;
+}
+
+.area-blog {
+    @include centraliza-conteudo;
+    .area-blogImg {
+        background-size: cover;
+        grid-column: 1 / 7;
+    }
+}
+
+.borda1 {
+    width: 110%;
+    @include borda-fina;
+    margin-left: -405px;
+    margin-top: -30px;
+    margin-bottom: $margem-debaixo;
+}
+
+.area-lojas {
+    @include centraliza-conteudo;
+    flex-direction: row-reverse;
+    .area-lojasImg {
+        grid-column: 7 / 13;
+        grid-row: 4;
+    }
+}
+
+.borda2 {
+    width: 110%;
+    @include borda-fina;
+    margin-left: 380px;
+    margin-top: -30px;
+    margin-bottom: $margem-debaixo;
+}
+
+.area-personalize {
+    @include centraliza-conteudo;
+    .area-personImg {
+        grid-column: 1 / 7;
+        grid-row: 5;
+    }
+}
+
+.borda3 {
+    width: 110%;
+    @include borda-fina;
+    margin-left: -295px;
+    margin-top: -30px;
+    margin-bottom: $margem-debaixo;
+}
+
+.area-lorem {
+    @include centraliza-conteudo;
+    flex-direction: row-reverse;
+    .area-loremImg {
+        grid-column: 7 / 13;
+        grid-row: 6;
+    }
+}
+
+.borda4 {
+    width: 130%;
+    @include borda-fina;
+    margin-left: 340px;
+    margin-top: -30px;
+    margin-bottom: $margem-debaixo;
+}
+
+.area-ipsum {
+    @include centraliza-conteudo;
+    .area-ipsumImg {
+        grid-column: 1 / 7;
+        grid-row: 7;
+    }
+}
+
+.borda5 {
+    width: 130%;
+    @include borda-fina;
+    margin-left: -350px;
+    margin-top: -30px;
+    margin-bottom: $margem-debaixo;
+}
+
+.area-insta {
+    grid-column: 1 / 13;
+    grid-row: 8;
+    background-image: url("/img/banner-insta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    @include centraliza-conteudo;
+    justify-content: center;
+    flex-direction: column;
+    h3 {
+        color: $cor-texto-branco;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-size: 1.5rem;
+    }
+}
