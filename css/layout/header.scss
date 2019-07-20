@@ -5,9 +5,9 @@ header {
 
 .header-top {
     height: 6vh;
-    @include centraliza-conteudo;
     justify-content: space-between;
     padding: 0 15px 0 15px;
+    @include centraliza-conteudo;
 }
 
 .location {
@@ -20,17 +20,17 @@ header {
         margin-right: 5px;
     }
     a {
+        color: $cor-cinza-claro;
+        font-size: .6rem;
         text-decoration: none;
         text-transform: uppercase;
-        font-size: .6rem;
-        color: $cor-cinza-claro;
     }
 }
 
 .user-area {
+    justify-content: space-evenly;
     width: 20%;
     @include centraliza-conteudo;
-    justify-content: space-evenly;
     span {
         margin: 10px;
     }

@@ -1,16 +1,15 @@
 .showcase {
-    grid-row: 2;
-    @include centraliza-conteudo;
-    justify-content: center;
     flex-direction: column;
+    grid-row: 2;
+    justify-content: center;
+    @include centraliza-conteudo;
     h1,
     p {
         margin-bottom: 20px;
     }
     h1 {
-        font-weight: bold;
         color: #222;
-        text-transform: uppercase;
+        font-weight: bold;
     }
     p {
         color: $cor-cinza-claro;
@@ -20,20 +19,23 @@
 }
 
 .product-line {
-    width: 97%;
-    @include centraliza-conteudo;
     justify-content: space-between;
     padding: 20px;
+    width: 97%;
+    @include centraliza-conteudo;
     img {
         cursor: pointer;
     }
 }
 
 .product {
-    width: 120px;
-    height: 120px;
-    padding: 60px;
-    @include centraliza-conteudo;
-    justify-content: center;
     flex-direction: row;
+    height: 120px;
+    justify-content: center;
+    padding: 60px;
+    width: 120px;
+    @include centraliza-conteudo;
+    &:hover {
+        opacity: .3;
+    }
 }

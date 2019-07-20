@@ -1,6 +1,6 @@
 @mixin centraliza-conteudo {
-    display: $tipo-display;
     align-items: $alinha-centro;
+    display: $tipo-display;
 }
 
 @mixin borda-fina {

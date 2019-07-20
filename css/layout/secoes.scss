@@ -7,34 +7,34 @@
 }
 
 .infos {
-    padding: 150px;
-    line-height: 20px;
-    text-align: center;
-    color: $cor-destaque-cinza;
     background-color: #fff;
-    @include centraliza-conteudo;
-    justify-content: center;
+    color: $cor-destaque-cinza;
     flex-direction: column;
+    justify-content: center;
+    line-height: 20px;
+    padding: 150px;
+    text-align: center;
+    @include centraliza-conteudo;
     h2 {
-        margin-bottom: 50px;
         letter-spacing: .2em;
         font-weight: 100;
+        margin-bottom: 50px;
     }
     p {
-        word-spacing: .1em;
         line-height: 30px;
+        word-spacing: .1em;
     }
 }
 
 .infos button,
 .area-insta button {
-    border: none;
-    width: 190px;
-    height: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
     color: $cor-texto-branco;
+    border: none;
+    font-weight: bold;
+    height: 40px;
     margin-top: 20px;
+    text-transform: uppercase;
+    width: 190px;
 }
 
 .area-lojas button,
@@ -60,16 +60,16 @@
 }
 
 .borda1 {
-    width: 110%;
-    @include borda-fina;
+    margin-bottom: $margem-debaixo;
     margin-left: -405px;
     margin-top: -30px;
-    margin-bottom: $margem-debaixo;
+    width: 110%;
+    @include borda-fina;
 }
 
 .area-lojas {
-    @include centraliza-conteudo;
     flex-direction: row-reverse;
+    @include centraliza-conteudo;
     .area-lojasImg {
         grid-column: 7 / 13;
         grid-row: 4;
@@ -77,11 +77,11 @@
 }
 
 .borda2 {
-    width: 110%;
-    @include borda-fina;
+    margin-bottom: $margem-debaixo;
     margin-left: 380px;
     margin-top: -30px;
-    margin-bottom: $margem-debaixo;
+    width: 110%;
+    @include borda-fina;
 }
 
 .area-personalize {
@@ -93,16 +93,16 @@
 }
 
 .borda3 {
-    width: 110%;
-    @include borda-fina;
+    margin-bottom: $margem-debaixo;
     margin-left: -295px;
     margin-top: -30px;
-    margin-bottom: $margem-debaixo;
+    width: 110%;
+    @include borda-fina;
 }
 
 .area-lorem {
-    @include centraliza-conteudo;
     flex-direction: row-reverse;
+    @include centraliza-conteudo;
     .area-loremImg {
         grid-column: 7 / 13;
         grid-row: 6;
@@ -110,11 +110,11 @@
 }
 
 .borda4 {
-    width: 130%;
-    @include borda-fina;
+    margin-bottom: $margem-debaixo;
     margin-left: 340px;
     margin-top: -30px;
-    margin-bottom: $margem-debaixo;
+    width: 130%;
+    @include borda-fina;
 }
 
 .area-ipsum {
@@ -126,27 +126,27 @@
 }
 
 .borda5 {
-    width: 130%;
-    @include borda-fina;
+    margin-bottom: $margem-debaixo;
     margin-left: -350px;
     margin-top: -30px;
-    margin-bottom: $margem-debaixo;
+    width: 130%;
+    @include borda-fina;
 }
 
 .area-insta {
-    grid-column: 1 / 13;
-    grid-row: 8;
     background-image: url("/img/banner-insta.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
-    @include centraliza-conteudo;
-    justify-content: center;
     flex-direction: column;
+    grid-column: 1 / 13;
+    grid-row: 8;
+    height: 500px;
+    justify-content: center;
+    @include centraliza-conteudo;
     h3 {
         color: $cor-texto-branco;
-        text-transform: uppercase;
-        letter-spacing: .1em;
         font-size: 1.5rem;
+        letter-spacing: .1em;
+        text-transform: uppercase;
     }
 }
