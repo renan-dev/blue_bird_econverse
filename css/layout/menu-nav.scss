@@ -90,7 +90,7 @@
         border-bottom: 1px solid $cor-borda-cinza;
         &::placeholder {
             color: $cor-cinza-claro;
-            background-image: url("../img/icons/search.png");
+            background-image: url("../../img/search.png");
             background-position-x: 145px;
             background-repeat: no-repeat;
             background-size: 10px;
@@ -113,7 +113,7 @@
         justify-content: left;
     }
     .logo {
-        background-image: url("/img/logo-puro.png");
+        background-image: url("../../img/logo-puro.png");
         background-repeat: no-repeat;
         background-position-x: -150px;
         display: flex;
@@ -122,17 +122,11 @@
         margin-right: 290px;
         width: 40px;
     }
-    .location {
-        display: none;
-    }
-    .user-area {
-        display: none;
-    }
     .search {
         align-items: center;
         display: flex;
         input {
-            background-image: url("../img/icons/search.png");
+            background-image: url("../../img/search.png");
             background-repeat: no-repeat;
             background-position: 60px 3px;
             width: 70px;

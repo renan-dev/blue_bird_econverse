@@ -8,5 +8,7 @@ window.onscroll = () => {
     }
     if (top === 0) {
         menu.classList.remove('menu-aux');
+        document.querySelector('.logo img').src = '../img/logo.png';
+        
     }
 }
